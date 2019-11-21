@@ -133,7 +133,7 @@
 
                             <body data-spy="scroll" data-target="col-xs-4 ml-auto" data-offset="50"></body>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalDK" data-whatever="@mdo">Đăng ký khóa học</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalDK" data-whatever="@mdo">Lựa chọn khóa học</button>
                                 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ModalTuVan" data-whatever="@fat">Tư Vấn</button>
                             </div>
                         </div>
@@ -259,7 +259,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Đăng Ký</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Lựa chọn</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			  </button>
@@ -269,35 +269,61 @@
                         <div class="form-group">
                             <label>Chọn VĐK</label> <br>
                             <div class="choice-item">
-                                <button>
-										<img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">									
-								</button>
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
+                                <!-- <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px"> -->
+                                <ul>
+                                    <li><input type="checkbox" id="cb_vdk1" />
+                                        <span>stm32f103c8tx</span><label for="cb1"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_vdk2" />
+                                        <span>stm32f746ng</span><label for="cb2"><img src="./images/stm32f746ng.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_vdk3" />
+                                        <span>stm32f103c8tx</span><label for="cb3"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_vdk4" />
+                                        <span>stm32f103c8tx</span><label for="cb4"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_vdk5" />
+                                        <span>stm32f103c8tx</span><label for="cb4"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_vdk6" />
+                                        <span>stm32f103c8tx</span><label for="cb4"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_vdk7" />
+                                        <span>stm32f103c8tx</span><label for="cb4"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="InputPassword1">Password</label>
-                            <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                            <label>Chọn linh kiện</label> <br>
+                            <div class="choice-item">
+                                <!-- <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px"> -->
+                                <ul>
+                                    <li><input type="checkbox" id="cb_Module2" />
+                                        <span>LCD</span>
+                                        <label for="cb1"><img src="./images/LCD.jpg" height="70px" width="200px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_Module2" />
+                                        <span>sim800l</span><label for="cb2"><img src="./images/sim800l.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_Module3" />
+                                        <span>PIR HC-SR501</span><label for="cb3"><img src="./images/SR501.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_Module4" />
+                                        <span>DHT-11</span><label for="cb4"><img src="./images/DHT11.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_Module5" />
+                                        <span>MQ-135</span><label for="cb4"><img src="./images/MQ135.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                    <li><input type="checkbox" id="cb_Module6" />
+                                        <span>4x4 Keypad</span><label for="cb4"><img src="./images/Keypad.jpg" height="90px" class="zoom"/></label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <label>Lựa Chọn Khóa Học</label>
-                        <select class="form-control">
-								  <option>Khóa Vi Điều Khiển Cơ Bản</option>
-								  <option>Khóa IOTS Cơ Bản</option>
-								  <option>Khóa Machine Lerning Cơ Bản</option>
-						</select>
                         </br>
-                        </br>
-                        <button type="submit" class="btn btn-primary">Đăng Ký</button>
+                        <button type="submit" class="btn btn-primary">Hoàn tất</button>
                     </form>
                 </div>
 
