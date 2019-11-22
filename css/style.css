@@ -248,7 +248,17 @@ hr.dark {
 .card-container:hover .card-flip {
     transform: rotateY(180deg);
 }
+.modal-content{
 
+background-color: #333333 ;
+  }
+
+.font-weight-bold{
+	color: #AC3B61;
+	font-weight:bold;
+	font-size:12pt;
+
+}
 footer {
     background-color: #EEE2DC;
     color: #EDC737;
