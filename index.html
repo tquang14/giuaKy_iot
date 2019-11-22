@@ -111,20 +111,20 @@
 
                                         <div class="container-img">
                                             <img src="./images/vdkk.jpg" class=" img-fluid" alt="Snow">
-                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo">Tìm hiểu về Pic</button>
+                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModalPIC" data-whatever="@mdo">Tìm hiểu về Pic</button>
                                         </div>
 
                                         <br />
                                         <div class="container-img">
                                             <img src="./images/arm.jpg" class=" img-fluid" alt="Snow">
-                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo">Tìm hiểu về ARM</button>
+                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModalARM" data-whatever="@mdo">Tìm hiểu về ARM</button>
                                         </div>
 
                                         <br />
 
                                         <div class="container-img">
                                             <img src="./images/ard.jpg" class=" img-fluid" alt="Snow">
-                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo">Tìm hiểu về Adruino</button>
+                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModalADR" data-whatever="@mdo">Tìm hiểu về Adruino</button>
                                         </div>
 
                                     </div>
@@ -362,48 +362,176 @@
     </div>
     <!-- End From đăng ký -->
 
-    <!-- VDK -->
-
-    <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel">Các dòng PIC</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				  <span aria-hidden="true">&times;</span>
+    
+	
+				<!-- VDK-Pic -->
+		<div class="modal fade info" id="exampleModalPIC" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title-center" id="exampleModalLongTitle">Sơ Lược Về Pic</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
 				</button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
+				</div>
+				<div class="modal-body">
+						<h6 class="font-weight-bold">Giới thiệu sơ bộ về PIC:</h6>
 
-                        <div class="col-md-3">
-                            <button class="btn btn-primary bouton-image monBouton">
-							  <img src="./images/vdk1.jpg" >
-						  </button>
-                        </div>
+						<p class="font-weight-normal">. PIC là một họ vi điều khiển RISC được sản xuất bởi công ty Microchip Technology. Dòng PIC đầu tiên là PIC1650 được phát triển bởi Microelectronics Division thuộc General Instrument.</p>
+						<p class="font-weight-normal">. PIC bắt nguồn là chữ viết tắt của "Programmable Intelligent Computer" (Máy tính khả trình thông minh) là một sản phẩm của hãng General Instrument
+							 đặt cho dòng sản phẩm đầu tiên của họ là PIC1650. Lúc này, PIC1650 được dùng để giao tiếp với các thiết bị ngoại vi cho máy chủ 16bit CP1600, vì vậy, người ta cũng gọi PIC với cái tên "Peripheral Interface Controller" (Bộ điều khiển giao tiếp ngoại vi). CP1600 là một CPU tốt, nhưng lại kém về các hoạt động xuất nhập, và vì vậy PIC 8-bit được phát triển vào khoảng năm 1975 để hỗ trợ hoạt động xuất nhập cho CP1600. PIC sử dụng microcode đơn giản đặt trong ROM, và mặc dù, cụm từ RISC chưa được sử dụng thời bây giờ, nhưng PIC thực sự là một vi điều khiển với kiến trúc RISC, chạy một lệnh một chu kỳ máy (4 chu kỳ của bộ dao động).</p>		
+						<p class="font-weight-normal">. PIC được bổ sung EEPROM để tạo thành 1 bộ điều khiển vào ra khả trình. Ngày nay rất nhiều dòng PIC được xuất xưởng với hàng loạt các module ngoại vi tích hợp sẵn (như USART, PWM, ADC...), với bộ nhớ chương trình từ 512 Word đến 32K Word.
 
-                        <div class="col-md-4">
-                            <button class="btn btn-primary bouton-image monBouton">
-							  <img src="./images/vdk1.jpg" >
-						  </button>
-                        </div>
+									Hiện nay, tại Việt Nam, đã có một cộng đồng nghiên cứu và phát triển PIC, dsPIC và PIC32.</p>
+						<h6 class="font-weight-bold">Các dòng PIC</h6>
 
-                        <div class="col-md-4">
-                            <button class="btn btn-primary bouton-image monBouton">
-							  <img src="./images/vdk1.jpg" >
-						  </button>
-                        </div>
+						<p class="font-weight-normal">Vi điều khiển 8-bit:
+							</br>
+								.PIC10
+							</br>
+								.PIC12
+							</br>
+								.PIC14
+							</br>
+								.PIC16
+							</br>
+								.PIC17
+							</br>
+								.PIC18
+							</br>
+								Vi điều khiển 16-bit:
+							</br>
+								
+								.PIC24
+							</br>
+								Bộ điều khiển xử lý tín hiệu số 16-bit:
+							</br>
+							 .(dsPIC)
+							</br>
+								
+								.dsPIC30
+							</br>
+								.dsPIC33F
+							</br>
+								Bộ điều khiển xử lý tín hiệu số 32-bit (PIC32):
+							</br>
+								
+								.PIC32 (công bố ngày 05/11/2007)</p>
+						
+						<h6 class="font-weight-bold">Linh kiện cần chuẩn bị:</h6>
+
+						<p class="font-weight-normal">Laptop,Cáp MINI-USB,Kit PIC</p>
+				</div>
+				<div class="modal-footer">
+				<a class="btn btn-primary" href="https://vi.wikipedia.org/wiki/Vi_%C4%91i%E1%BB%81u_khi%E1%BB%83n_PIC" role="button">Thông tin thêm</a>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<!--end VDK-Pic -->
 
 
+			<!-- VDK-Arm -->
+			<div class="modal fade info" id="exampleModalARM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title-center" id="exampleModalLongTitle">Sơ Lược Về Arm</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						</div>
+						<div class="modal-body">
+								<h6 class="font-weight-bold">Giới thiệu sơ bộ về ARM:</h6>
 
+								<p class="font-weight-normal">. ARM, trước đây là Advanced RISC Machine, ban đầu là Acorn RISC Machine, là một kiến trúc dạng RISC cho các vi xử lý máy tính, được cấu hình cho các môi trường khác nhau. Arm Holdings phát triển kiến ​​trúc và cấp phép cho các công ty khác, những người sẽ thiết kế các sản phẩm của riêng họ thực hiện một trong những kiến ​​trúc đó ‍bao gồm các SoC và các mô-đun hệ 
+									thống (SoM) kết hợp bộ nhớ, giao diện, radio. Họ cũng thiết kế các lõi thực hiện tập lệnh này và cấp phép cho các thiết kế này cho một số công ty kết hợp các thiết kế cốt lõi đó vào các sản phẩm của riêng họ.</br>. Với hơn 100 tỷ bộ xử lý ARM được sản xuất tính đến năm 2017, ARM là kiến ​​trúc tập lệnh được sử dụng rộng rãi nhất và kiến ​​trúc tập lệnh được sản xuất với số lượng lớn nhất.
+									[6][7][8][9][10] Hiện tại, các lõi Cortex được sử dụng rộng rãi, các lõi "cổ điển" cũ hơn và các biến thể lõi SecurCore chuyên dụng có sẵn cho mỗi loại này để bao gồm hoặc loại trừ các khả năng tùy chọn.</p>
+								
+								<h6 class="font-weight-bold">Các dòng ARM</h6>
+								<p class="font-weight-normal">
+									
+										. ARMv1
+									</br>
+										. ARMv2
+									</br>
+										. ARMv3
+									</br>
+										. ARMv4
+									</br>
+										. ARMv5
+									</br>
+										. ARMv6
+									</br>
+										. ARMv7
+									</br>
+										
+										. ARMv8
+									</p>
+								
+								<h6 class="font-weight-bold">Linh kiện cần chuẩn bị:</h6>
 
-                    </div>
-                </div>
+								<p class="font-weight-normal">Laptop,Cáp MINI-USB,Kit ARM các loại</p>
+						</div>
+						<div class="modal-footer">
+								<a class="btn btn-primary" href="https://vi.wikipedia.org/wiki/C%E1%BA%A5u_tr%C3%BAc_ARM" role="button">Thông tin thêm</a>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+				<!--end VDK-ARM -->
+			
+			<!-- VDK-Adr -->
+			<div class="modal fade info" id="exampleModalADR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title-center" id="exampleModalLongTitle">Sơ Lược Về Adruino</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						</div>
+						<div class="modal-body">
+								<h6 class="font-weight-bold">Giới thiệu sơ bộ về Adruino:</h6>
 
-            </div>
-        </div>
-    </div>
-    <!--end VDK -->
+								<p class="font-weight-normal">. Arduino một nền tảng mã nguồn mở phần cứng và phần mềm. Phần cứng Arduino (các board mạch vi xử lý) được sinh ra tại thị trấn Ivrea ở Ý, nhằm xây dựng các ứng dụng tương tác với nhau hoặc với môi trường được thuận lợi hơn. Phần cứng bao gồm một board mạch nguồn mở được thiết kế trên nền tảng vi xử lý AVR Atmel 8bit, hoặc ARM Atmel 32-bit. Những Model hiện tại được trang bị gồm 1 cổng giao tiếp USB, 6 chân đầu vào analog, 14 chân I/O kỹ thuật số tương thích với nhiều board mở rộng khác nhau.
+
+								</br>	. Được giới thiệu vào năm 2005, Những nhà thiết kế của Arduino cố gắng mang đến một phương thức dễ dàng, không tốn kém cho những người yêu thích, sinh viên và giới chuyên nghiệp để tạo ra những thiết bị có khả năng tương tác với môi trường thông qua các cảm biến và các cơ cấu chấp hành. Những ví dụ phổ biến cho những người yêu thích mới bắt đầu bao gồm các robot đơn giản, điều khiển nhiệt độ và phát hiện chuyển động. Đi cùng với nó là một môi trường phát triển tích hợp (IDE) chạy trên các máy tính cá nhân thông thường và cho phép người dùng viết các chương trình cho Aduino bằng ngôn ngữ C hoặc C++.</p>
+								
+								<h6 class="font-weight-bold">Các dòng Adruino</h6>
+								<p class="font-weight-normal">
+									
+									. Adruino UNO R3
+									</br>
+									. Adruino NANO
+									</br>
+									. Adruino DUE
+									</br>
+									. Adruino MINI
+									</br>
+									. Adruino LILI PAD
+									</br>
+									. Adruino MEGA
+								
+									</p>
+								
+								<h6 class="font-weight-bold">Linh kiện cần chuẩn bị:</h6>
+
+								<p class="font-weight-normal">Laptop,Cáp MINI-USB,Kit Adruino các loại</p>
+						</div>
+						<div class="modal-footer">
+								<a class="btn btn-primary" href="https://vi.wikipedia.org/wiki/Arduino" role="button">Thông tin thêm</a>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+				<!--end VDK-Adr -->	
 
     <hr class="my-4">
     <div class="container-fluid padding">
