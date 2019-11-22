@@ -19,11 +19,11 @@
 
 <body data-spy="scroll" data-target=".navbar">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
 
             <a class="navbar-branch" href="#">
-
+                <img src="./images/logo.png" height="60">
             </a>
             <!-- <div class="p-1 bg-warning rounded rounded-pill shadow-sm mb-4">
                 <div class="input-group">
@@ -39,13 +39,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#Home">Home</a>
+                        <a class="nav-link active" href="#Home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Dịch vụ</a>
+                        <a class="nav-link" href="#service">DỊCH VỤ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Liên Hệ</a>
+                        <a class="nav-link" href="#contact">LIÊN HỆ</a>
                     </li>
                 </ul>
             </div>
@@ -249,93 +249,131 @@
         </div>
     </div>
 
+
+
+
+
     <!-- From đăng ký -->
     <div class="modal fade" id="ModalDK" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Lựa chọn</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group" style="border-bottom: 1px solid #e9ecef;">
-                        <label>Chọn VĐK</label> <br>
-                        <div class="choice-item">
-                            <!-- <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px"> -->
-                            <ul>
-                                <li><input type="radio" name="VDK" checked="checked" value="stm32f103c8tx" />
-                                    <span>stm32f103c8tx</span><label for="cb1"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="VDK" value="stm32f746ng" />
-                                    <span>stm32f746ng</span><label for="cb2"><img src="./images/stm32f746ng.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="VDK" value="Arduino Uno" />
-                                    <span>Arduino Uno</span><label for="cb3"><img src="./images/arduinoUno.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="VDK" value="ESP 8266" />
-                                    <span>ESP 8266</span><label for="cb4"><img src="./images/esp8266.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="form-group" style="border-bottom: 1px solid #e9ecef;">
-                        <label>Chọn loại cảm biến</label> <br>
-                        <div class="choice-item">
-                            <!-- <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px"> -->
-                            <ul>
-                                <li><input type="radio" name="in_sensor" value="Cảm biến mưa" checked="checked" />
-                                    <span>Cảm biến mưa</span>
-                                    <label for="cb1"><img src="./images/rainSensor.jpg" height="70px" width="200px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="in_sensor" value="sim800l" />
-                                    <span>sim800l</span><label for="cb2"><img src="./images/sim800l.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="in_sensor" value="Cảm biến PIR" />
-                                    <span>PIR HC-SR501</span><label for="cb3"><img src="./images/SR501.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="in_sensor" value="DHT-11" />
-                                    <span>DHT-11</span><label for="cb4"><img src="./images/DHT11.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="in_sensor" value="MQ-135" />
-                                    <span>MQ-135</span><label for="cb4"><img src="./images/MQ135.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="in_sensor" value="4x4 Keypad" />
-                                    <span>4x4 Keypad</span><label for="cb4"><img src="./images/Keypad.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Chọn linh kiện hiển thị</label> <br>
-                        <div class="choice-item">
-                            <!-- <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px"> -->
-                            <ul>
-                                <li><input type="radio" name="out_module" value="LCD" checked="checked" />
-                                    <span>LCD</span>
-                                    <label for="cb1"><img src="./images/LCD.jpg" height="70px" width="200px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="out_module" value="Led 7 đoạn" />
-                                    <span>Led 7 đoạn</span><label for="cb2"><img src="./images/Led7Seg.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="out_module" value="Led đơn" />
-                                    <span>Led đơn</span><label for="cb3"><img src="./images/led.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                                <li><input type="radio" name="out_module" value="Servo" />
-                                    <span>Servo</span><label for="cb4"><img src="./images/servo.jpg" height="90px" class="zoom"/></label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </br>
-                    <div id="suggest">nội dung</div>
-                    </br>
-                    <button class="btn btn-primary" onclick="getSuggest()">Hoàn tất</button>
-                </div>
 
+
+                <section class="container py-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>CÁC DÒNG VI ĐIỀU KHIỂN</h2>
+                            <ul id="tabsJustified" class="nav nav-tabs">
+                                <li class="nav-item"><a href="" data-target="#PIC" data-toggle="tab" class="nav-link small text-uppercase">PIC</a></li>
+                                <li class="nav-item"><a href="" data-target="#ARM" data-toggle="tab" class="nav-link small text-uppercase active">ARM</a></li>
+                                <li class="nav-item"><a href="" data-target="#ADR" data-toggle="tab" class="nav-link small text-uppercase">ADRUINO</a></li>
+                            </ul>
+                            <br>
+                            <div id="tabsJustifiedContent" class="tab-content">
+                                <div id="PIC" class="tab-pane fade ">
+                                    <div class="choice-item">
+                                        <ul>
+                                            <li><input type="radio" name="VDK" value="stm32f103c8tx" />
+                                                <span>Stm32f103c8tx</span><label for="cb1"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                            </li>
+                                            <li><input type="radio" name="VDK" value="stm32f746ng" />
+                                                <span>Stm32f746ng</span><label for="cb2"><img src="./images/stm32f746ng.jpg" height="90px" class="zoom"/></label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="ARM" class="tab-pane fade active show">
+                                    <div class="choice-item">
+                                        <ul>
+                                            <li><input type="radio" name="VDK" checked="checked" value="stm32f103c8tx" />
+                                                <span>Stm32f103c8tx</span><label for="cb1"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                            </li>
+                                            <li><input type="radio" name="VDK" value="stm32f746ng" />
+                                                <span>Stm32f746ng</span><label for="cb2"><img src="./images/stm32f746ng.jpg" height="90px" class="zoom"/></label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="ADR" class="tab-pane fade">
+                                    <div class="choice-item">
+                                        <ul>
+                                            <li><input type="radio" name="VDK" value="Arduino Uno" />
+                                                <span>Arduino Uno</span><label for="cb3"><img src="./images/arduinoUno.jpg" height="90px" class="zoom"/></label>
+                                            </li>
+                                            <li><input type="radio" name="VDK" value="ESP 8266" />
+                                                <span>ESP 8266</span><label for="cb4"> <img src="./images/esp8266.jpg" height="90px" class="zoom"/></label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <div class="form-group" style="border-bottom: 1px solid #e9ecef;">
+                    <h2>CHỌN CẢM BIẾN</h2> <br>
+                    <div class="choice-item">
+                        <!-- <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px"> -->
+                        <ul>
+                            <li><input type="radio" name="in_sensor" value="Cảm biến mưa" checked="checked" />
+                                <span>Cảm biến mưa</span>
+                                <label for="cb1"><img src="./images/rainSensor.jpg" height="70px" width="200px" class="zoom"/></label>
+                            </li>
+                            <li><input type="radio" name="in_sensor" value="sim800l" />
+                                <span>sim800l</span><label for="cb2"><img src="./images/sim800l.jpg" height="90px" class="zoom"/></label>
+                            </li>
+                            <li><input type="radio" name="in_sensor" value="Cảm biến PIR" />
+                                <span>PIR HC-SR501</span><label for="cb3"><img src="./images/SR501.jpg" height="90px" class="zoom"/></label>
+                            </li>
+                            <li><input type="radio" name="in_sensor" value="DHT-11" />
+                                <span>DHT-11</span><label for="cb4"><img src="./images/DHT11.jpg" height="90px" class="zoom"/></label>
+                            </li>
+                            <li><input type="radio" name="in_sensor" value="MQ-135" />
+                                <span>MQ-135</span><label for="cb4"><img src="./images/MQ135.jpg" height="90px" class="zoom"/></label>
+                            </li>
+                            <li><input type="radio" name="in_sensor" value="4x4 Keypad" />
+                                <span>4x4 Keypad</span><label for="cb4"><img src="./images/Keypad.jpg" height="90px" class="zoom"/></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Chọn linh kiện hiển thị</label> <br>
+                    <div class="choice-item">
+                        <!-- <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px"> -->
+                        <ul>
+                            <li><input type="radio" name="out_module" value="LCD" checked="checked" />
+                                <span>LCD</span>
+                                <label for="cb1"><img src="./images/LCD.jpg" height="70px" width="200px" class="zoom"/></label>
+                            </li>
+                            <li><input type="radio" name="out_module" value="Led 7 đoạn" />
+                                <span>Led 7 đoạn</span><label for="cb2"><img src="./images/Led7Seg.jpg" height="90px" class="zoom"/></label>
+                            </li>
+                            <li><input type="radio" name="out_module" value="Led đơn" />
+                                <span>Led đơn</span><label for="cb3"><img src="./images/led.jpg" height="90px" class="zoom"/></label>
+                            </li>
+                            <li><input type="radio" name="out_module" value="Servo" />
+                                <span>Servo</span><label for="cb4"><img src="./images/servo.jpg" height="90px" class="zoom"/></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </br>
+                <div id="suggest">nội dung</div>
+                </br>
+                <button class="btn btn-primary" onclick="getSuggest()">Hoàn tất</button>
             </div>
+
         </div>
+    </div>
     </div>
     <!-- End From đăng ký -->
 
