@@ -248,17 +248,17 @@ hr.dark {
 .card-container:hover .card-flip {
     transform: rotateY(180deg);
 }
-.modal-content{
 
-background-color: #333333 ;
-  }
-
-.font-weight-bold{
-	color: #AC3B61;
-	font-weight:bold;
-	font-size:12pt;
-
+.modal-content {
+    background-color: #333333;
 }
+
+.font-weight-bold {
+    color: #AC3B61;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
 footer {
     background-color: #EEE2DC;
     color: #EDC737;
@@ -274,7 +274,7 @@ footer p {
 .choice-item {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 300px;
+    height: 200px;
 }
 
 .choice-item ul {
@@ -302,4 +302,11 @@ footer p {
     -webkit-transform: scale(1.5);
     /* Safari 3-8 */
     transform: scale(1.5);
+}
+
+
+/* gợi ý các khóa học */
+
+#suggest {
+    display: none;
 }
