@@ -13,16 +13,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
 
             <a class="navbar-branch" href="#">
-
+              
             </a>
             <!-- <div class="p-1 bg-warning rounded rounded-pill shadow-sm mb-4">
                 <div class="input-group">
@@ -38,19 +39,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="#Home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#service">DỊCH VỤ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Connect</a>
+                        <a class="nav-link" href="#contact">LIÊN HỆ</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +57,7 @@
     <div id="slides" class="carousel slide" data-ride="carousel">
 
 
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="Home">
             <div class="carousel-item active">
                 <img src="./images/kmt.png">
             </div>
@@ -73,9 +68,9 @@
     <!-- Horizontal Text Rule -->
     <div class="container-fluid padding">
         </br>
-        <div class="row welcome text-center">
+        <div class="row welcome text-center" id="service">
             <div class="col-12">
-                <h1 class="display-4">THAM KHẢO</h1>
+                <h1 class="display-4">Tổng quan - lựa chọn các khóa học</h1>
             </div>
         </div>
         <!-- Horizontal Text Rule -->
@@ -111,20 +106,20 @@
 
                                         <div class="container-img">
                                             <img src="./images/vdkk.jpg" class=" img-fluid" alt="Snow">
-                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo">Tìm hiểu về Pic</button>
+                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModalPIC" data-whatever="@mdo">Tìm hiểu về Pic</button>
                                         </div>
 
                                         <br />
                                         <div class="container-img">
                                             <img src="./images/arm.jpg" class=" img-fluid" alt="Snow">
-                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo">Tìm hiểu về ARM</button>
+                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModalARM" data-whatever="@mdo">Tìm hiểu về ARM</button>
                                         </div>
 
                                         <br />
 
                                         <div class="container-img">
                                             <img src="./images/ard.jpg" class=" img-fluid" alt="Snow">
-                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo">Tìm hiểu về Adruino</button>
+                                            <button type="button" class="btn btn-primary btn-lg active" data-toggle="modal" data-target="#exampleModalADR" data-whatever="@mdo">Tìm hiểu về Adruino</button>
                                         </div>
 
                                     </div>
@@ -133,7 +128,7 @@
 
                             <body data-spy="scroll" data-target="col-xs-4 ml-auto" data-offset="50"></body>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalDK" data-whatever="@mdo">Đăng ký khóa học</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalDK" data-whatever="@mdo">Lựa chọn khóa học</button>
                                 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ModalTuVan" data-whatever="@fat">Tư Vấn</button>
                             </div>
                         </div>
@@ -183,7 +178,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalDK" data-whatever="@mdo">Đăng ký khóa học</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_IOT" data-whatever="@mdo">Lộ trình học IOT</button>
                                 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ModalTuVan" data-whatever="@fat">Tư Vấn</button>
                             </div>
                         </div>
@@ -211,10 +206,10 @@
                         <!-- Card 3 Back -->
                         <div class="card back">
                             <div class="card-header text-center">
-                                Machine Learning
+                                AI
                             </div>
                             <div class="card-block">
-                                <h4 class="card-title text-center">AI</h4>
+                                <h4 class="card-title text-center">Các nội dung cơ bản</h4>
                                 <div class="col-xs-4 ml-auto  ">
                                     <div class="container-img">
                                         <img src="./images/AI.jpg" class=" img-fluid" alt="Snow">
@@ -239,7 +234,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalDK" data-whatever="@mdo">Đăng ký khóa học</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal_AI" data-whatever="@mdo">Lộ trình học AI</button>
                                 <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ModalTuVan" data-whatever="@fat">Tư Vấn</button>
                             </div>
                         </div>
@@ -254,51 +249,127 @@
         </div>
     </div>
 
+    
+   
+        
+
     <!-- From đăng ký -->
     <div class="modal fade" id="ModalDK" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Đăng Ký</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label>Chọn VĐK</label> <br>
-                            <div class="choice-item">
-                                <button>
-										<img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">									
-								</button>
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
-                                <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px">
+                     
+                    
+                    <section class="container py-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>CÁC DÒNG VI ĐIỀU KHIỂN</h2>
+                                    <ul id="tabsJustified" class="nav nav-tabs">
+                                        <li class="nav-item"><a href="" data-target="#PIC" data-toggle="tab" class="nav-link small text-uppercase">PIC</a></li>
+                                        <li class="nav-item"><a href="" data-target="#ARM" data-toggle="tab" class="nav-link small text-uppercase active">ARM</a></li>
+                                        <li class="nav-item"><a href="" data-target="#ADR" data-toggle="tab" class="nav-link small text-uppercase">ADRUINO</a></li>
+                                    </ul>
+                                    <br>
+                                    <div id="tabsJustifiedContent" class="tab-content">
+                                        <div id="PIC" class="tab-pane fade ">
+                                            <div class="choice-item">
+                                                <ul>
+                                                    <li><input type="radio" name="VDK"  value="stm32f103c8tx" />
+                                                        <span>Stm32f103c8tx</span><label for="cb1"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                                    </li>
+                                                    <li><input type="radio" name="VDK" value="stm32f746ng" />
+                                                        <span>Stm32f746ng</span><label for="cb2"><img src="./images/stm32f746ng.jpg" height="90px" class="zoom"/></label>
+                                                    </li>
+                                                   
+                                                </ul>
+                                            </div>
+                                        </div>
+                
+                                        <div id="ARM" class="tab-pane fade active show">
+                                                <div class="choice-item">
+                                                        <ul>
+                                                                <li><input type="radio" name="VDK" checked="checked" value="stm32f103c8tx" />
+                                                                    <span>Stm32f103c8tx</span><label for="cb1"><img src="./images/stm32f103c8tx.jpg" height="90px" class="zoom"/></label>
+                                                                </li>
+                                                                <li><input type="radio" name="VDK" value="stm32f746ng" />
+                                                                    <span>Stm32f746ng</span><label for="cb2"><img src="./images/stm32f746ng.jpg" height="90px" class="zoom"/></label>
+                                                                </li>
+                                                               
+                                                            </ul>
+                                                </div>
+                                            </div>
+                
+                                        <div id="ADR" class="tab-pane fade">
+                                                    <div class="choice-item">
+                                                            <ul>
+                                                                    <li><input type="radio" name="VDK" value="Arduino Uno" />
+                                                                        <span>Arduino Uno</span><label for="cb3"><img src="./images/arduinoUno.jpg" height="90px" class="zoom"/></label>
+                                                                    </li>
+                                                                    <li><input type="radio" name="VDK" value="ESP 8266" />
+                                                                        <span>ESP 8266</span><label for="cb4"> <img src="./images/esp8266.jpg" height="90px" class="zoom"/></label>
+                                                                    </li>
+                                                                </ul>   
+                                                    </div>
+                                                </div>    
+                                       
+                                    </div>
+                                </div>
                             </div>
+                        </section>
+
+
+               
+                    <div class="form-group" style="border-bottom: 1px solid #e9ecef;">
+                            <h2>CHỌN CẢM BIẾN</h2> <br>
+                        <div class="choice-item">
+                            <!-- <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px"> -->
+                            <ul>
+                                <li><input type="radio" name="in_sensor" value="Cảm biến mưa" checked="checked" />
+                                    <span>Cảm biến mưa</span>
+                                    <label for="cb1"><img src="./images/rainSensor.jpg" height="70px" width="200px" class="zoom"/></label>
+                                </li>
+                                <li><input type="radio" name="in_sensor" value="sim800l" />
+                                    <span>sim800l</span><label for="cb2"><img src="./images/sim800l.jpg" height="90px" class="zoom"/></label>
+                                </li>
+                                <li><input type="radio" name="in_sensor" value="Cảm biến PIR" />
+                                    <span>PIR HC-SR501</span><label for="cb3"><img src="./images/SR501.jpg" height="90px" class="zoom"/></label>
+                                </li>
+                                <li><input type="radio" name="in_sensor" value="DHT-11" />
+                                    <span>DHT-11</span><label for="cb4"><img src="./images/DHT11.jpg" height="90px" class="zoom"/></label>
+                                </li>
+                                <li><input type="radio" name="in_sensor" value="MQ-135" />
+                                    <span>MQ-135</span><label for="cb4"><img src="./images/MQ135.jpg" height="90px" class="zoom"/></label>
+                                </li>
+                                <li><input type="radio" name="in_sensor" value="4x4 Keypad" />
+                                    <span>4x4 Keypad</span><label for="cb4"><img src="./images/Keypad.jpg" height="90px" class="zoom"/></label>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <label for="InputPassword1">Password</label>
-                            <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label>Chọn linh kiện hiển thị</label> <br>
+                        <div class="choice-item">
+                            <!-- <img src="./images/stm32f103c8tx.jpg" alt="stm32f103c8t6" height="70px" width="200px"> -->
+                            <ul>
+                                <li><input type="radio" name="out_module" value="LCD" checked="checked" />
+                                    <span>LCD</span>
+                                    <label for="cb1"><img src="./images/LCD.jpg" height="70px" width="200px" class="zoom"/></label>
+                                </li>
+                                <li><input type="radio" name="out_module" value="Led 7 đoạn" />
+                                    <span>Led 7 đoạn</span><label for="cb2"><img src="./images/Led7Seg.jpg" height="90px" class="zoom"/></label>
+                                </li>
+                                <li><input type="radio" name="out_module" value="Led đơn" />
+                                    <span>Led đơn</span><label for="cb3"><img src="./images/led.jpg" height="90px" class="zoom"/></label>
+                                </li>
+                                <li><input type="radio" name="out_module" value="Servo" />
+                                    <span>Servo</span><label for="cb4"><img src="./images/servo.jpg" height="90px" class="zoom"/></label>
+                                </li>
+                            </ul>
                         </div>
-                        <label>Lựa Chọn Khóa Học</label>
-                        <select class="form-control">
-								  <option>Khóa Vi Điều Khiển Cơ Bản</option>
-								  <option>Khóa IOTS Cơ Bản</option>
-								  <option>Khóa Machine Lerning Cơ Bản</option>
-						</select>
-                        </br>
-                        </br>
-                        <button type="submit" class="btn btn-primary">Đăng Ký</button>
-                    </form>
+                    </div>
+                    </br>
+                    <div id="suggest">nội dung</div>
+                    </br>
+                    <button class="btn btn-primary" onclick="getSuggest()">Hoàn tất</button>
                 </div>
 
             </div>
@@ -336,50 +407,229 @@
     </div>
     <!-- End From đăng ký -->
 
-    <!-- VDK -->
 
-    <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+
+    <!-- VDK-Pic -->
+    <div class="modal fade info" id="exampleModalPIC" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel">Các dòng PIC</h5>
+                    <h5 class="modal-title-center" id="exampleModalLongTitle">Sơ Lược Về Pic</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				  <span aria-hidden="true">&times;</span>
+					<span aria-hidden="true">&times;</span>
 				</button>
                 </div>
                 <div class="modal-body">
-                    <div class="container-fluid">
+                    <h6 class="font-weight-bold">Giới thiệu sơ bộ về PIC:</h6>
 
-                        <div class="col-md-3">
-                            <button class="btn btn-primary bouton-image monBouton">
-							  <img src="./images/vdk1.jpg" >
-						  </button>
-                        </div>
+                    <p class="font-weight-normal">. PIC là một họ vi điều khiển RISC được sản xuất bởi công ty Microchip Technology. Dòng PIC đầu tiên là PIC1650 được phát triển bởi Microelectronics Division thuộc General Instrument.</p>
+                    <p class="font-weight-normal">. PIC bắt nguồn là chữ viết tắt của "Programmable Intelligent Computer" (Máy tính khả trình thông minh) là một sản phẩm của hãng General Instrument đặt cho dòng sản phẩm đầu tiên của họ là PIC1650. Lúc này, PIC1650 được dùng để giao
+                        tiếp với các thiết bị ngoại vi cho máy chủ 16bit CP1600, vì vậy, người ta cũng gọi PIC với cái tên "Peripheral Interface Controller" (Bộ điều khiển giao tiếp ngoại vi). CP1600 là một CPU tốt, nhưng lại kém về các hoạt động xuất
+                        nhập, và vì vậy PIC 8-bit được phát triển vào khoảng năm 1975 để hỗ trợ hoạt động xuất nhập cho CP1600. PIC sử dụng microcode đơn giản đặt trong ROM, và mặc dù, cụm từ RISC chưa được sử dụng thời bây giờ, nhưng PIC thực sự là một
+                        vi điều khiển với kiến trúc RISC, chạy một lệnh một chu kỳ máy (4 chu kỳ của bộ dao động).</p>
+                    <p class="font-weight-normal">. PIC được bổ sung EEPROM để tạo thành 1 bộ điều khiển vào ra khả trình. Ngày nay rất nhiều dòng PIC được xuất xưởng với hàng loạt các module ngoại vi tích hợp sẵn (như USART, PWM, ADC...), với bộ nhớ chương trình từ 512 Word đến 32K
+                        Word. Hiện nay, tại Việt Nam, đã có một cộng đồng nghiên cứu và phát triển PIC, dsPIC và PIC32.</p>
+                    <h6 class="font-weight-bold">Các dòng PIC</h6>
 
-                        <div class="col-md-4">
-                            <button class="btn btn-primary bouton-image monBouton">
-							  <img src="./images/vdk1.jpg" >
-						  </button>
-                        </div>
+                    <p class="font-weight-normal">Vi điều khiển 8-bit:
+                        </br>
+                        .PIC10
+                        </br>
+                        .PIC12
+                        </br>
+                        .PIC14
+                        </br>
+                        .PIC16
+                        </br>
+                        .PIC17
+                        </br>
+                        .PIC18
+                        </br>
+                        Vi điều khiển 16-bit:
+                        </br>
 
-                        <div class="col-md-4">
-                            <button class="btn btn-primary bouton-image monBouton">
-							  <img src="./images/vdk1.jpg" >
-						  </button>
-                        </div>
+                        .PIC24
+                        </br>
+                        Bộ điều khiển xử lý tín hiệu số 16-bit:
+                        </br>
+                        .(dsPIC)
+                        </br>
 
+                        .dsPIC30
+                        </br>
+                        .dsPIC33F
+                        </br>
+                        Bộ điều khiển xử lý tín hiệu số 32-bit (PIC32):
+                        </br>
 
+                        .PIC32 (công bố ngày 05/11/2007)</p>
 
+                    <h6 class="font-weight-bold">Linh kiện cần chuẩn bị:</h6>
 
-                    </div>
+                    <p class="font-weight-normal">Laptop,Cáp MINI-USB,Kit PIC</p>
                 </div>
-
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://vi.wikipedia.org/wiki/Vi_%C4%91i%E1%BB%81u_khi%E1%BB%83n_PIC" role="button">Thông tin thêm</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
             </div>
         </div>
     </div>
-    <!--end VDK -->
 
-    <hr class="my-4">
+    <!--end VDK-Pic -->
+
+
+    <!-- VDK-Arm -->
+    <div class="modal fade info" id="exampleModalARM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title-center" id="exampleModalLongTitle">Sơ Lược Về Arm</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="font-weight-bold">Giới thiệu sơ bộ về ARM:</h6>
+
+                    <p class="font-weight-normal">. ARM, trước đây là Advanced RISC Machine, ban đầu là Acorn RISC Machine, là một kiến trúc dạng RISC cho các vi xử lý máy tính, được cấu hình cho các môi trường khác nhau. Arm Holdings phát triển kiến ​​trúc và cấp phép cho các công
+                        ty khác, những người sẽ thiết kế các sản phẩm của riêng họ thực hiện một trong những kiến ​​trúc đó ‍bao gồm các SoC và các mô-đun hệ thống (SoM) kết hợp bộ nhớ, giao diện, radio. Họ cũng thiết kế các lõi thực hiện tập lệnh này
+                        và cấp phép cho các thiết kế này cho một số công ty kết hợp các thiết kế cốt lõi đó vào các sản phẩm của riêng họ.</br>. Với hơn 100 tỷ bộ xử lý ARM được sản xuất tính đến năm 2017, ARM là kiến ​​trúc tập lệnh được sử dụng rộng
+                        rãi nhất và kiến ​​trúc tập lệnh được sản xuất với số lượng lớn nhất. [6][7][8][9][10] Hiện tại, các lõi Cortex được sử dụng rộng rãi, các lõi "cổ điển" cũ hơn và các biến thể lõi SecurCore chuyên dụng có sẵn cho mỗi loại này để
+                        bao gồm hoặc loại trừ các khả năng tùy chọn.</p>
+
+                    <h6 class="font-weight-bold">Các dòng ARM</h6>
+                    <p class="font-weight-normal">
+
+                        . ARMv1
+                        </br>
+                        . ARMv2
+                        </br>
+                        . ARMv3
+                        </br>
+                        . ARMv4
+                        </br>
+                        . ARMv5
+                        </br>
+                        . ARMv6
+                        </br>
+                        . ARMv7
+                        </br>
+
+                        . ARMv8
+                    </p>
+
+                    <h6 class="font-weight-bold">Linh kiện cần chuẩn bị:</h6>
+
+                    <p class="font-weight-normal">Laptop,Cáp MINI-USB,Kit ARM các loại</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://vi.wikipedia.org/wiki/C%E1%BA%A5u_tr%C3%BAc_ARM" role="button">Thông tin thêm</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end VDK-ARM -->
+
+    <!-- VDK-Adr -->
+    <div class="modal fade info" id="exampleModalADR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title-center" id="exampleModalLongTitle">Sơ Lược Về Adruino</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="font-weight-bold">Giới thiệu sơ bộ về Adruino:</h6>
+
+                    <p class="font-weight-normal">. Arduino một nền tảng mã nguồn mở phần cứng và phần mềm. Phần cứng Arduino (các board mạch vi xử lý) được sinh ra tại thị trấn Ivrea ở Ý, nhằm xây dựng các ứng dụng tương tác với nhau hoặc với môi trường được thuận lợi hơn. Phần cứng
+                        bao gồm một board mạch nguồn mở được thiết kế trên nền tảng vi xử lý AVR Atmel 8bit, hoặc ARM Atmel 32-bit. Những Model hiện tại được trang bị gồm 1 cổng giao tiếp USB, 6 chân đầu vào analog, 14 chân I/O kỹ thuật số tương thích
+                        với nhiều board mở rộng khác nhau.
+
+                        </br> . Được giới thiệu vào năm 2005, Những nhà thiết kế của Arduino cố gắng mang đến một phương thức dễ dàng, không tốn kém cho những người yêu thích, sinh viên và giới chuyên nghiệp để tạo ra những thiết bị có khả năng tương
+                        tác với môi trường thông qua các cảm biến và các cơ cấu chấp hành. Những ví dụ phổ biến cho những người yêu thích mới bắt đầu bao gồm các robot đơn giản, điều khiển nhiệt độ và phát hiện chuyển động. Đi cùng với nó là một môi trường
+                        phát triển tích hợp (IDE) chạy trên các máy tính cá nhân thông thường và cho phép người dùng viết các chương trình cho Aduino bằng ngôn ngữ C hoặc C++.</p>
+
+                    <h6 class="font-weight-bold">Các dòng Adruino</h6>
+                    <p class="font-weight-normal">
+
+                        . Adruino UNO R3
+                        </br>
+                        . Adruino NANO
+                        </br>
+                        . Adruino DUE
+                        </br>
+                        . Adruino MINI
+                        </br>
+                        . Adruino LILI PAD
+                        </br>
+                        . Adruino MEGA
+
+                    </p>
+
+                    <h6 class="font-weight-bold">Linh kiện cần chuẩn bị:</h6>
+
+                    <p class="font-weight-normal">Laptop,Cáp MINI-USB,Kit Adruino các loại</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://vi.wikipedia.org/wiki/Arduino" role="button">Thông tin thêm</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end VDK-Adr -->
+
+    <!-- lộ trình học IOT -->
+    <div class="modal fade info" id="Modal_IOT" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title-center" id="exampleModalLongTitle">Lộ trình học IOT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://vi.wikipedia.org/wiki/Vi_%C4%91i%E1%BB%81u_khi%E1%BB%83n_PIC" role="button">Thông tin thêm</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end lộ trình học IOT -->
+
+    <!-- lộ trình học AI -->
+    <div class="modal fade info" id="Modal_AI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title-center" id="exampleModalLongTitle">Lộ trình học AI</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="https://vi.wikipedia.org/wiki/Vi_%C4%91i%E1%BB%81u_khi%E1%BB%83n_PIC" role="button">Thông tin thêm</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end lộ trình học AI -->
+
+    <hr class="my-4" id="contact">
     <div class="container-fluid padding">
         <div class="row text-center padding">
             <div class="col-12">
