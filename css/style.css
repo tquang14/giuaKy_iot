@@ -15,11 +15,13 @@ body {
 }
 
 .navbar li a {
-    color: #EDC737 !important;
+    color: gray !important;  
+    font-size: 20px;
 }
 
 .navbar li a:hover {
-    color: yellow !important;
+    color: black !important;
+    border: 1px solid #EDC737;
 }
 
 .carousel-inner img {
